@@ -1,139 +1,37 @@
-<!-- index.html (Home page) -->
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Schouten Keuken & Bad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      color: #333;
-    }
-    header {
-      background: #0a0a0a;
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    .section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2em;
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .service-box {
-      flex: 1 1 300px;
-      background: #f3f3f3;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-      height: 200px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    input, textarea, button {
-      padding: 12px;
-      font-size: 1em;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-    button {
-      background: #0a0a0a;
-      color: white;
-      cursor: pointer;
-      border: none;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #f5f5f5;
-      margin-top: 40px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schouten Keuken & Bad</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>Schouten Keuken & Bad</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="keukens.html">Keukens</a>
+            <a href="badkamers.html">Badkamers</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-  <header>
-    <h1>Schouten Keuken & Bad</h1>
-    <p>Maatwerk voor jouw huis – van keuken tot badkamer.</p>
-  </header>
+    <section class="hero">
+        <h2>Maak van je keuken of badkamer een droom!</h2>
+        <p>Schouten Keuken & Bad biedt maatwerk en kwaliteit voor de beste keukens en badkamers.</p>
+        <a href="contact.html" class="cta-button">Maak een afspraak</a>
+    </section>
 
-  <section class="section">
-    <h2>Over Ons</h2>
-    <p>Schouten Keuken & Bad is jouw specialist in hoogwaardige keukens en badkamers op maat. Wij combineren vakmanschap met stijlvol design en persoonlijk advies. Van ontwerp tot plaatsing: wij zorgen voor het totaalplaatje.</p>
-  </section>
+    <section class="about">
+        <h2>Over Schouten Keuken & Bad</h2>
+        <p>Een keuken of badkamer is een investering voor vele jaren, waarbij meerdere keuzes gemaakt moeten worden. Denk aan ontwerp, indeling, materialen, kleurstelling, stijl, apparatuur en/of accessoires. Schouten Keuken & Bad heeft de ervaring, de kennis en het vakmanschap in huis om samen met u tot een optimaal resultaat te komen. De website geeft in beknopte vorm een idee van onze mogelijkheden. Vanzelfsprekend ontvangen we u graag in onze showroom. Een afspraak is zo gemaakt.</p>
+    </section>
 
-  <section class="section">
-    <h2>Onze Diensten</h2>
-    <div class="services">
-      <div class="service-box">
-        <h3><a href="keukens.html">Keukens op Maat</a></h3>
-        <p>Functioneel, stijlvol en volledig afgestemd op jouw wensen. Onze keukens combineren design met dagelijks gebruiksgemak.</p>
-      </div>
-      <div class="service-box">
-        <h3><a href="badkamers.html">Badkamers op Maat</a></h3>
-        <p>Van moderne inloopdouche tot luxe ligbad – wij ontwerpen en plaatsen badkamers die rust en comfort uitstralen.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Onze Projecten</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/400x300?text=Keuken+1" alt="Keuken 1">
-      <img src="https://via.placeholder.com/400x300?text=Keuken+2" alt="Keuken 2">
-      <img src="https://via.placeholder.com/400x300?text=Badkamer+1" alt="Badkamer 1">
-      <img src="https://via.placeholder.com/400x300?text=Badkamer+2" alt="Badkamer 2">
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" name="name" placeholder="Naam" required>
-      <input type="email" name="email" placeholder="E-mailadres" required>
-      <textarea name="message" rows="5" placeholder="Bericht" required></textarea>
-      <button type="submit">Verstuur</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Schouten Keuken & Bad | Alle rechten voorbehouden</p>
-  </footer>
-
+    <footer>
+        <p>&copy; 2023 Schouten Keuken & Bad | <a href="contact.html">Contact</a></p>
+    </footer>
 </body>
 </html>
